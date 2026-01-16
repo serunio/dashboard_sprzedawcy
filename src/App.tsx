@@ -1,6 +1,6 @@
 import './App.css'
-import Widget from "./Components/Widget/Widget.tsx";
-import Header from "./Components/Header/Header.tsx";
+import Widget from "./Components/Molekuły/Widget/Widget.tsx";
+import Header from "./Components/Molekuły/Header/Header.tsx";
 
 function App() {
 
