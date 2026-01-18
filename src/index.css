@@ -20,22 +20,15 @@
   --primary-color: #155DFC;
   --red-color: #FF0000;
   --stroke-color: #FDFDFD;
-
-
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  background-color: var(--background-color);
-
-
+  --star-color: #FFEA00;
 }
 
 :root[data-theme="dark"]{
   color-scheme: dark;
-  --background-color: #364153;
-  --widget-color: #4A5973;
-  --secondary-color: #606F89;
+
+  --background-color: #21252D;
+  --widget-color: #28303C;
+  --secondary-color: #394558;
   --secondary-text-color: #DDDDE1;
   --text-color: #FDFDFD;
   --blue-label-color: rgba(7, 73, 166, 0.4);
@@ -50,6 +43,22 @@
   --green-stroke-color: #6DFF88;
 }
 
-body{
-  margin: 0;
+h4 {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+h2 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+}
+
+h1 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
 }

@@ -1,0 +1,14 @@
+.root {
+    border-radius: 6px;
+    border-width: 0;
+
+    &[data-variant='filled'] {
+        background: var(--primary-color);
+        color: var(--stroke-color);
+    }
+
+    &[data-variant='default'] {
+        background: var(--secondary-color);
+        color: var(--secondary-text-color);
+    }
+}
