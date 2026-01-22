@@ -1,4 +1,4 @@
-import {BigColoredLabel} from "../Atomy/Colored Label/Big.tsx";
+import {BigColoredLabel} from "../Atomy/ColoredLabel/ColoredLabel.tsx";
 import {Lightbulb} from "lucide-react";
 import {colors} from "../../Colors.ts";
 

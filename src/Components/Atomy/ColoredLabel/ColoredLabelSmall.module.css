@@ -1,0 +1,27 @@
+.root {
+
+    &[data-variant='awful'] {
+        background: var(--red-label-color);
+        color: var(--red-stroke-color);
+    }
+
+    &[data-variant='bad'] {
+        background: var(--orange-label-color);
+        color: var(--orange-stroke-color);
+    }
+
+    &[data-variant='medium'] {
+        background: var(--yellow-label-color);
+        color: var(--yellow-stroke-color);
+    }
+
+    &[data-variant='good'] {
+        background: var(--green-label-color);
+        color: var(--green-stroke-color);
+    }
+
+    &[data-variant='excellent'] {
+        background: var(--blue-label-color);
+        color: var(--blue-stroke-color);
+    }
+}
