@@ -3,11 +3,13 @@ import Orders from './orders.json'
 import Tips from './tips.json'
 import Reviews from './review.json'
 import SellerQuality from "./sellerQuality.json";
+import ProductsRanking from "./productsRanking.json";
 
 export const pl = {
   "common": Common,
   "orders": Orders,
   "tips": Tips,
   "reviews": Reviews,
-  "sellerQuality": SellerQuality
+  "sellerQuality": SellerQuality,
+  "productsRanking": ProductsRanking
 }

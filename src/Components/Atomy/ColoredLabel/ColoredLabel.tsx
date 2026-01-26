@@ -1,6 +1,7 @@
-import {Group, Paper, ThemeIcon, Title, Badge, type BadgeProps} from "@mantine/core";
+import {Group, Paper, ThemeIcon, Badge, type BadgeProps} from "@mantine/core";
 import {type LucideIcon} from "lucide-react";
 import classes from './ColoredLabelSmall.module.css'
+import {SmallHeader} from "../Label.tsx";
 
 type BigColoredLabelProps = { title: string, Icon: LucideIcon, count?: number, color: string, textColor: string }
 
@@ -11,9 +12,9 @@ export function BigColoredLabel({title, Icon, count, color, textColor}: BigColor
         <ThemeIcon color={textColor} variant={'transparent'} size={'sm'}>
           <Icon size={'80%'}/>
         </ThemeIcon>
-        <Title c={textColor} order={4}>{title}</Title>
+        <SmallHeader c={textColor}>{title}</SmallHeader>
       </Group>
-      <Title c={textColor} order={4}>{count}</Title>
+      <SmallHeader c={textColor} >{count}</SmallHeader>
     </Group>
   </Paper>
 }

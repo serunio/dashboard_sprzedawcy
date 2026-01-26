@@ -1,21 +1,23 @@
 import {SmallColoredLabel} from "../Atomy/ColoredLabel/ColoredLabel.tsx";
 import {useTranslation} from "react-i18next";
-import {Stack, Text} from "@mantine/core";
+import {Stack} from "@mantine/core";
+import {BigText} from "../Atomy/Label.tsx";
 
-export function QualityCategory({score}:{score:number}) {
+export function QualityCategory({sum, maxSum}:{sum:number, maxSum:number}) {
   const {t} = useTranslation("sellerQuality")
+  const score = sum/maxSum
   let category:string;
-  if (score < 20) {
+  if (score < .2) {
     category = 'awful'
-  } else if (score < 40) {
+  } else if (score < .4) {
     category = 'bad'
-  } else if (score < 60) {
+  } else if (score < .6) {
     category = 'medium'
-  } else if (score < 80) {
+  } else if (score < .8) {
     category = 'good'
   } else {
     category = 'excellent'
   }
 
-  return (<Stack gap={'0'} align={'center'}><Text fz={'36'} fw={600}>{score}/100</Text><SmallColoredLabel variant={category}>{t(category)}</SmallColoredLabel></Stack>)
+  return (<Stack gap={'0'} align={'center'}><BigText>{sum}/{maxSum}</BigText><SmallColoredLabel variant={category}>{t(category)}</SmallColoredLabel></Stack>)
 }

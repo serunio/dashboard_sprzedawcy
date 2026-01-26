@@ -7,7 +7,7 @@ import {en} from './en/en.ts'
 await i18n.use(initReactI18next).init({
   lng: "pl",
   fallbackLng: "pl",
-  ns: ["common", "orders", "tips", "reviews", "sellerQuality"],
+  ns: ["common", "orders", "tips", "reviews", "sellerQuality", "productsRanking"],
   defaultNS: "common",
   resources: {
     pl: pl,
