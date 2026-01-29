@@ -5,6 +5,7 @@ import {CustomerReviews} from "../Components/Widgets/Customer reviews.tsx";
 import {SellerQuality} from "../Components/Widgets/Seller quality.tsx";
 import {ProductsRanking} from "../Components/Widgets/Products ranking.tsx";
 import {reviews, qualityAspects, products} from "../fakeAPI.ts";
+import {SellChart} from "../Components/Widgets/Sell chart.tsx";
 
 export function Dashboard() {
   return <>
@@ -14,6 +15,7 @@ export function Dashboard() {
       <CustomerReviews reviews={reviews}/>
       <SellerQuality aspects={qualityAspects}/>
       <ProductsRanking products={products}/>
+      <SellChart/>
     </Stack>
   </>
 }

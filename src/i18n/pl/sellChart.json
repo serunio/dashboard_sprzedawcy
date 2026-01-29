@@ -1,0 +1,14 @@
+{
+  "title": "Wykres sprzedaży",
+  "metric": "Metryka",
+  "revenue": "Obrót",
+  "units": "Liczba sprzedanych sztuk",
+  "period": "Okres",
+  "day": "Dzień",
+  "week": "Tydzień",
+  "year": "Rok",
+  "type": "Rodzaj wykresu",
+  "line": "Liniowy",
+  "bar": "Słupkowy",
+  "seePrevious": "Zobacz poprzedni okres"
+}

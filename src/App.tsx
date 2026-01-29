@@ -1,5 +1,6 @@
 import './App.css'
 import '@mantine/core/styles.css';
+import '@mantine/charts/styles.css'
 import {createTheme, MantineProvider} from '@mantine/core';
 import {createBrowserRouter, RouterProvider} from 'react-router'
 import {Dashboard} from "./Pages/Dashboard.tsx";
@@ -28,9 +29,7 @@ function App() {
              <MantineProvider theme={theme}>
                  <RouterProvider router={router}/>
             </MantineProvider>
-        </>
-
-    );
+        </>);
 }
 
 export default App

@@ -1,0 +1,14 @@
+{
+  "title": "Sell chart",
+  "metric": "Metric",
+  "revenue": "Revenue",
+  "units": "Units sold",
+  "period": "Period",
+  "day": "Day",
+  "week": "Week",
+  "year": "Year",
+  "type": "Chart type",
+  "line": "Line",
+  "bar": "Bar",
+  "seePrevious": "See previous period"
+}

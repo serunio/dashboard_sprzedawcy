@@ -4,6 +4,7 @@ import Tips from './tips.json'
 import Reviews from './review.json'
 import SellerQuality from "./sellerQuality.json";
 import ProductsRanking from "./productsRanking.json";
+import SellChart from "./sellChart.json"
 
 export const pl = {
   "common": Common,
@@ -11,5 +12,6 @@ export const pl = {
   "tips": Tips,
   "reviews": Reviews,
   "sellerQuality": SellerQuality,
-  "productsRanking": ProductsRanking
+  "productsRanking": ProductsRanking,
+  "sellChart": SellChart
 }
