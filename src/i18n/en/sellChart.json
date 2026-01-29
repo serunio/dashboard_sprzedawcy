@@ -10,5 +10,7 @@
   "type": "Chart type",
   "line": "Line",
   "bar": "Bar",
-  "seePrevious": "See previous period"
+  "seePrevious": "See previous period",
+  "current": "Current period",
+  "previous": "Previous period"
 }

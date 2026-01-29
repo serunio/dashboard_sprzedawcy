@@ -1,7 +1,8 @@
-import {Group, Rating, Stack} from "@mantine/core";
+import {Group, Stack} from "@mantine/core";
 import {colors} from "../../Colors.ts";
 import {DefaultText} from "../Atomy/Label.tsx";
 import {Frame} from "../Atomy/Frame.tsx";
+import {Rating} from "../Atomy/Rating.tsx";
 
 type Props = { review: string, stars: number, date: string }
 

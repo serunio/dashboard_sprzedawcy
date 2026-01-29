@@ -16,11 +16,12 @@
   --yellow-stroke-color: #DFAA0A;
   --green-label-color: #6DFF88;
   --green-stroke-color: #00840F;
+  --star-color: #ffb300;
 
   --primary-color: #155DFC;
   --red-color: #FF0000;
   --stroke-color: #FDFDFD;
-  --star-color: #FFEA00;
+
 
   --mantine-color-gray-3: red
 }
@@ -43,6 +44,7 @@
   --yellow-stroke-color: #FFD761;
   --green-label-color: rgba(7, 169, 37, 0.4);
   --green-stroke-color: #6DFF88;
+  --star-color: #ffd000;
 }
 
 h4 {

@@ -10,5 +10,7 @@
   "type": "Rodzaj wykresu",
   "line": "Liniowy",
   "bar": "Słupkowy",
-  "seePrevious": "Zobacz poprzedni okres"
+  "seePrevious": "Zobacz poprzedni okres",
+  "current": "Obecny okres",
+  "previous": "Poprzedni okres"
 }
