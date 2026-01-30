@@ -30,7 +30,7 @@ export function ProductsRanking({products, ...props}: ProductsRankingProps) {
             (<Button variant={filter === f ? 'filled' : 'default'} onClick={() => setFilter(f as ProductFilter)}>{t(f)}</Button>))
         }
       </Group>
-      <Stack gap={'5'}>
+      <Stack>
         {
           sortedProducts.map((p, i) => (<Product product={p} filter={filter} index={i+1}/>))
         }

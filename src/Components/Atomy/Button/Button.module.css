@@ -11,4 +11,9 @@
         background: var(--secondary-color);
         color: var(--secondary-text-color);
     }
+
+    &[data-variant='danger'] {
+        background: red;
+        color: var(--stroke-color);
+    }
 }

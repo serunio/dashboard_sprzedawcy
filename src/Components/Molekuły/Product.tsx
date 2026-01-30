@@ -9,7 +9,7 @@ export type ProductData = { name: string, img: string, views: number, trade: num
 
 export function Product({product, filter, index}: { product: ProductData, filter: ProductFilter, index: number }) {
   const [secondValue, secondColor, secondIcon] =  filter === "mostBought" ? [product.trade, colors.greenStroke, DollarSign] : [product.views, colors.blueStroke, Eye]
-  return <Frame>
+  return <Frame py={'17'}>
     <Group>
       <BigText>{index}</BigText>
       <Image src={product.img} w={100} h={50}/>

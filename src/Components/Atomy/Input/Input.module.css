@@ -1,0 +1,5 @@
+.input {
+    background-color: var(--widget-color);
+    border: solid var(--secondary-color);
+    color: var(--text-color)
+}

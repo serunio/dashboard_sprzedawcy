@@ -1,7 +1,7 @@
 import {NativeSelect, type NativeSelectProps} from "@mantine/core";
-import classes from './Select.module.css'
+import classes from './Dropdown.module.css'
 
-export function Select(props:NativeSelectProps) {
+export function Dropdown(props:NativeSelectProps) {
 
   return <NativeSelect {...props} classNames={classes}/>
 }

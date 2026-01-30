@@ -1,3 +1,7 @@
 {
-  "details": "See details"
+  "title": "Sellers dashboard",
+  "loginPage": "Login page",
+  "username": "Username",
+  "login": "Login",
+  "logout": "Logout"
 }

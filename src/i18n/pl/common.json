@@ -1,3 +1,7 @@
 {
-
+  "title": "Panel sprzedawcy",
+  "loginPage": "Strona logowania",
+  "username": "Nazwa użytkownika",
+  "login": "Zaloguj",
+  "logout": "Wyloguj"
 }

@@ -22,6 +22,10 @@ export function SmallHeader(props:Props) {
   return <Title c={colors.text} {...props} order={4} />
 }
 
+export function Header(props:Props) {
+  return <Text c={colors.text} {...props} fz={'24'} fw={600}/>
+}
+
 export function BigText(props:Props) {
   return <Text c={colors.text} {...props} fz={'36'} fw={600}/>
 }

@@ -7,7 +7,7 @@ import {DefaultText} from "../Atomy/Label.tsx";
 import {useState} from "react";
 import {chartData} from "../../fakeAPI.ts";
 import {colors} from "../../Colors.ts";
-import {Select} from "../Atomy/Select/Select.tsx";
+import {Dropdown} from "../Atomy/Dropdown/Dropdown.tsx";
 import {Tooltip} from "../Molekuły/Tooltip.tsx";
 import {Checkbox} from "../Atomy/Checkbox/Checkbox.tsx";
 
@@ -36,15 +36,14 @@ export function SellChart(props:BoxProps) {
       {list.map(c => (
         <Stack gap={'1'}>
           <DefaultText>{t(c.name)}</DefaultText>
-          <Select classNames={{wrapper: 'background-color: red'}}
-                  value={c.value}
-                  onChange={(event) => {
+          <Dropdown value={c.value}
+                    onChange={(event) => {
                     const value = event.currentTarget.value
                     if (c.list.includes(value)) {
                       c.set(value)
                     }
                   }}
-                  data={c.list.map(m => ({
+                    data={c.list.map(m => ({
                     value: m,
                     label: t(m)
                   }))}

@@ -7,6 +7,7 @@ import {QualityCategory} from "../Molekuły/Quality category.tsx";
 import {Button} from "../Atomy/Button/Button.tsx";
 import {colors} from "../../Colors.ts";
 import {SmallHeader} from "../Atomy/Label.tsx";
+import {useNavigate} from "react-router";
 
 export type QualityAspect = { name: string, value: number, maxValue: number }
 interface SellerQualityProps extends BoxProps {
@@ -20,6 +21,7 @@ export function SellerQuality({aspects, ...props}: SellerQualityProps) {
     maxValue: a.maxValue + b.maxValue
   }))
   const {t} = useTranslation("sellerQuality")
+  const navigate = useNavigate()
   return (
     <Widget {...props} title={t("title")} Icon={CircleStar}>
       <QualityCategory sum={sum.value} maxSum={sum.maxValue}/>
@@ -31,7 +33,7 @@ export function SellerQuality({aspects, ...props}: SellerQualityProps) {
         {aspects.slice(0, 3).map(a => (
           <ProgressBar name={t(a.name)} value={a.value + '/' + a.maxValue}/>
         ))}
-        <Button variant={'filled'} size={'sm'} fullWidth>{t("details")}</Button>
+        <Button onClick={() => navigate('/quality')} variant={'filled'} size={'sm'} fullWidth>{t("details")}</Button>
       </Stack>
     </Widget>)
 }

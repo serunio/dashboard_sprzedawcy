@@ -3,7 +3,7 @@ import {type LucideIcon} from "lucide-react";
 import classes from './ColoredLabelSmall.module.css'
 import {SmallHeader} from "../Label.tsx";
 
-type BigColoredLabelProps = { title: string, Icon: LucideIcon, count?: number, color: string, textColor: string }
+export type BigColoredLabelProps = { title: string, Icon: LucideIcon, count?: number, color: string, textColor: string }
 
 export function BigColoredLabel({title, Icon, count, color, textColor}: BigColoredLabelProps) {
   return <Paper bg={color} p={'sm'} bdrs={'md'} shadow={'0'}>
