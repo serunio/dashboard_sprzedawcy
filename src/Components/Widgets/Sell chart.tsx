@@ -57,7 +57,7 @@ export function SellChart(props:BoxProps) {
       </Group>
     </Group>
     <Space h={'md'}/>
-    <Chart h={300}
+    <Chart h={'70%'}
            data={(period === 'day' ? chartData.day : period === 'week' ? chartData.week : chartData.year)}
            dataKey="time"
            series={seePrevious ? [...series, {name: metric + 'Last',color: colors.yellowStroke}] : series}
