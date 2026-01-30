@@ -6,5 +6,10 @@
   "medium": "Medium",
   "good": "Good",
   "excellent": "Excellent",
-  "details": "See details"
+  "details": "See details",
+  "aspect1": "Items description",
+  "aspect2": "Pictures quality",
+  "aspect3": "Delivery time",
+  "aspect4": "Availability",
+  "aspect5": "Items quality"
 }

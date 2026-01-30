@@ -29,6 +29,7 @@ export function SellerQuality({aspects, ...props}: SellerQualityProps) {
       <Divider color={colors.secondary}/>
       <Space h={'md'}/>
       <SmallHeader>{t("subTitle")}</SmallHeader>
+      <Space h={'lg'}/>
       <Stack mx={'xl'}>
         {aspects.slice(0, 3).map(a => (
           <ProgressBar name={t(a.name)} value={a.value + '/' + a.maxValue}/>
