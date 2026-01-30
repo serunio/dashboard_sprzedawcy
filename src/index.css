@@ -22,8 +22,7 @@
   --red-color: #FF0000;
   --stroke-color: #FDFDFD;
 
-
-  --mantine-color-gray-3: red
+  background-color: var(--background-color);
 }
 
 :root[data-theme="dark"]{
