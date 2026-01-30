@@ -74,6 +74,5 @@ export function Layout() {
         <Outlet/>
       </AppShell.Main>
     </AppShell>
-
   </>
 }
