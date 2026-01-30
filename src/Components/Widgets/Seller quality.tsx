@@ -1,5 +1,5 @@
 import Widget from "../Molekuły/Widget.tsx";
-import {Divider, Space, Stack} from "@mantine/core";
+import {type BoxProps, Divider, Space, Stack} from "@mantine/core";
 import {ProgressBar} from "../Atomy/Progress bar.tsx";
 import {CircleStar} from "lucide-react";
 import {useTranslation} from "react-i18next";
@@ -9,8 +9,10 @@ import {colors} from "../../Colors.ts";
 import {SmallHeader} from "../Atomy/Label.tsx";
 
 export type QualityAspect = { name: string, value: number, maxValue: number }
-
-export function SellerQuality({aspects}: { aspects: Array<QualityAspect> }) {
+interface SellerQualityProps extends BoxProps {
+  aspects: QualityAspect[];
+}
+export function SellerQuality({aspects, ...props}: SellerQualityProps) {
   aspects.sort((a, b) => a.value / a.maxValue - b.value / b.maxValue)
   const sum = aspects.reduce((a, b) => ({
     name: '',
@@ -19,7 +21,7 @@ export function SellerQuality({aspects}: { aspects: Array<QualityAspect> }) {
   }))
   const {t} = useTranslation("sellerQuality")
   return (
-    <Widget title={t("title")} Icon={CircleStar}>
+    <Widget {...props} title={t("title")} Icon={CircleStar}>
       <QualityCategory sum={sum.value} maxSum={sum.maxValue}/>
       <Space h={'md'}/>
       <Divider color={colors.secondary}/>
@@ -27,7 +29,7 @@ export function SellerQuality({aspects}: { aspects: Array<QualityAspect> }) {
       <SmallHeader>{t("subTitle")}</SmallHeader>
       <Stack mx={'xl'}>
         {aspects.slice(0, 3).map(a => (
-          <ProgressBar name={a.name} value={a.value + '/' + a.maxValue}/>
+          <ProgressBar name={t(a.name)} value={a.value + '/' + a.maxValue}/>
         ))}
         <Button variant={'filled'} size={'sm'} fullWidth>{t("details")}</Button>
       </Stack>

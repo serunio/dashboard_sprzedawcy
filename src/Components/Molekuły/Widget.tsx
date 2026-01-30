@@ -5,9 +5,9 @@ import type {LucideIcon} from "lucide-react";
 
 type WidgetProps = { children?: React.ReactNode, title: string, Icon: LucideIcon }
 
-function Widget({children, title, Icon}: WidgetProps) {
+function Widget({children, title, Icon, ...props}: WidgetProps) {
     return <>
-        <Paper bg={colors.widget} p={"20px"} radius={'lg'} shadow={'sm'} >
+        <Paper {...props} bg={colors.widget} p={"20px"} radius={'lg'} shadow={'sm'} >
             <Group gap={'8'} mb={'lg'}>
                 <ThemeIcon variant={'transparent'} color={colors.text} size={'lg'} mt={'3'}>
                     <Icon size={'100%'}/>

@@ -1,13 +1,14 @@
-import { Paper, Text } from '@mantine/core';
+import {Paper, Text} from '@mantine/core';
 import {colors} from "../../Colors.ts";
 import {useTranslation} from "react-i18next";
 
 interface ChartTooltipProps {
   label: React.ReactNode;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload: readonly Record<string, any>[] | undefined;
 }
 
-export function Tooltip({ label, payload }: ChartTooltipProps) {
+export function Tooltip({label, payload}: ChartTooltipProps) {
   const {t} = useTranslation('sellChart')
   if (!payload) return null;
 

@@ -31,7 +31,6 @@ export function CustomerReviews({reviews}: { reviews: Array<ReviewData> }) {
         {filteredReviews.map(r => <Review review={r.review} stars={r.stars} date={r.date.toDateString()}/>)}
         <Button variant={'filled'} size={'sm'} fullWidth>{t("details")}</Button>
       </Stack>
-
     </Widget>
   )
 

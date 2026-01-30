@@ -39,7 +39,7 @@ export function Layout() {
         </Group>
 
       </AppShell.Header>
-      <AppShell.Main m={'20px'}>
+      <AppShell.Main mx={'20px'}>
         <Outlet/>
       </AppShell.Main>
     </AppShell>

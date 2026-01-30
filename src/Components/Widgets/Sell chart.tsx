@@ -1,7 +1,7 @@
 import Widget from "../Molekuły/Widget.tsx";
 import {useTranslation} from "react-i18next";
 import {ChartColumn} from "lucide-react";
-import {Group, Space, Stack} from "@mantine/core";
+import {type BoxProps, Group, Space, Stack} from "@mantine/core";
 import {BarChart, LineChart} from '@mantine/charts';
 import {DefaultText} from "../Atomy/Label.tsx";
 import {useState} from "react";
@@ -15,7 +15,7 @@ const metrics = ['revenue', 'units']
 const periods = ['day', 'week', 'year']
 const types = ['bar', 'line']
 
-export function SellChart() {
+export function SellChart(props:BoxProps) {
   const {t} = useTranslation('sellChart')
   const [metric, setMetric] = useState('revenue');
   const [period, setPeriod] = useState('day');
@@ -31,7 +31,7 @@ export function SellChart() {
   const Chart = type === 'line' ? LineChart : BarChart
   const series = [{name: metric, color: colors.primary}]
 
-  return <Widget title={t('title')} Icon={ChartColumn}>
+  return <Widget {...props} title={t('title')} Icon={ChartColumn}>
     <Group align={'end'}>
       {list.map(c => (
         <Stack gap={'1'}>
